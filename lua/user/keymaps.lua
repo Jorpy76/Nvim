@@ -19,3 +19,10 @@ vim.keymap.set('n', '<leader>w', '<cmd>write<cr>')
 vim.keymap.set('n', '<leader>bq', '<cmd>bdelete<cr>')
 vim.keymap.set('n', '<leader>bl', '<cmd>buffer #<cr>')
 
+-- Buffers
+vim.keymap.set("n", "<Tab>", "<Cmd>BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<S-Tab>", "<Cmd>BufferLineCyclePrev<CR>")
+
+  -- Navegate between tree and open buffer
+  vim.keymap.set('n', '<C-h>', '<cmd>wincmd w<cr>')
+  vim.keymap.set('n', '<C-l>', '<cmd>wincmd l<cr>')

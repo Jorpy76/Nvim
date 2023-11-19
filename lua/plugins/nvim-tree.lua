@@ -18,6 +18,11 @@ Plugin.opts = {
     bufmap('L', api.node.open.edit, 'Expand folder or go to file')
     bufmap('H', api.node.navigate.parent_close, 'Close parent folder')
     bufmap('gh', api.tree.toggle_hidden_filter, 'Toggle hidden files')
+		bufmap('a', api.fs.create,'Create')
+		bufmap('d', api.fs.remove,'Delete')
+		bufmap('r', api.fs.rename,'Rename')
+		bufmap('x', api.fs.cut,'Cut')
+		bufmap('y', api.fs.copy.filename,'Rename')
   end
 }
 

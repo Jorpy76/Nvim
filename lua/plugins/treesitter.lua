@@ -1,7 +1,8 @@
 local Plugin = {'nvim-treesitter/nvim-treesitter'}
 
 Plugin.dependencies = {
-  {'nvim-treesitter/nvim-treesitter-textobjects'}
+  {'nvim-treesitter/nvim-treesitter-textobjects'},
+	 {'windwp/nvim-ts-autotag'}
 }
 
 -- See :help nvim-treesitter-modules
@@ -30,12 +31,15 @@ Plugin.opts = {
     'vim',
     'vimdoc',
     'css',
-    'json'
+    'json',
+		'html',
+		'css'
   },
 }
 
-function Plugin.config(name, opts)
+function Plugin.config(opts)
   require('nvim-treesitter.configs').setup(opts)
+	require('nvim-ts-autotag').setup()
 end
 
 return Plugin

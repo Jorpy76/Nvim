@@ -9,6 +9,10 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = false
 vim.opt.signcolumn = 'yes'
-
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
 vim.opt.termguicolors = true
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
