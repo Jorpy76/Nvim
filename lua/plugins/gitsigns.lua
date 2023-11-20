@@ -16,4 +16,3 @@ Plugin.opts = {
 }
 
 return Plugin
-
